@@ -1,0 +1,34 @@
+.ps-search-results__section {
+    position: relative;
+    margin: 20px 0;
+}
+
+.ps-search-results__section__more {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    font-size: 12px;
+}
+
+.ps-search-results__section .ant-list-header {
+    padding: 0;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.ps-search-results__section .ant-list-item {
+    padding: 0;
+    margin-bottom: 4px;
+    border: none !important;
+}
+
+.ps-search-results__section .ant-list-item-meta-description {
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ps-search-results__section .ant-list-item-meta-description a {
+    color: #000;
+}
