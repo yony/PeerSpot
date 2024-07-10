@@ -165,7 +165,9 @@ function App() {
                 </div>
                 <div className='ps-items-panel__level ps-items-panel__level--child'>
                   <header className="ps-items-panel__header">
-                    <Button type="text" shape="circle" icon={<ArrowLeftOutlined />} onClick={() => setMenuLevel(0)}></Button>
+                    <Button type="text" shape="circle" icon={<ArrowLeftOutlined style={{
+        fontSize: '12px',
+      }} />} onClick={() => setMenuLevel(0)}></Button>
                     <div>Steps</div>
                     <div style={{ width: '40px'}}></div>
                   </header>
@@ -178,7 +180,9 @@ function App() {
                 </div>
                 <div className='ps-items-panel__level ps-items-panel__level--child'>
                   <header className="ps-items-panel__header">
-                    <Button type="text" shape="circle" icon={<ArrowLeftOutlined />} onClick={() => setMenuLevel(1)}></Button>
+                    <Button type="text" shape="circle" icon={<ArrowLeftOutlined style={{
+        fontSize: '12px',
+      }} />} onClick={() => setMenuLevel(1)}></Button>
                     <div>Prompts</div>
                     <div style={{ width: '40px'}}></div>
                   </header>

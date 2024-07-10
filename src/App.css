@@ -3,6 +3,10 @@
     margin: 0;
     font-size: 24px;
 }
+
+
+/* LAYOUT */
+
 .ps-app {
     position: relative;
     width: 100vw;
@@ -10,12 +14,40 @@
     display: flex;
 }
 
+
+/* SIDEBAR */
+
 .ps-side-bar {
     display: flex;
     flex-direction: column;
     flex: 300px 0 0;
     border-right: 1px solid #E5E6E1;
     background-color: #FAFAFA;
+    overflow: hidden;
+    transition: flex .5s ease;
+}
+    
+.ps-side-bar--collapsed {
+    flex: 50px 0 0;
+}
+
+.ps-side-bar__header {
+    flex: 50px 0 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ps-logo {
+    height: 25px;
+    transition: transform 0.7s ease, opacity 1s ease;
+}
+    
+.ps-side-bar--collapsed .ps-logo {
+    transition: transform 1.5s ease, opacity 0.2s ease;
+    transform: translate3d(-30px, 0, 0);
+    opacity: 0;
 }
 
 .ps-main {
@@ -36,14 +68,6 @@
 .ps-header .ant-badge-dot {
     top: 5px;
     right: 5px;
-}
-
-.ps-side-bar__header {
-    flex: 50px 0 0;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .ps-body {

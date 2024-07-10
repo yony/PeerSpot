@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { List, Skeleton} from 'antd';
 
 const count = 5;
-const fakeDataUrl = `https://randomuser.me/api/?results=${count}&inc=name,gender,email,nat,picture&noinfo`;
+const fakeDataUrl = `https://randomuser.me/api/?results=${count}&inc=name`;
 
 function SearchResults({childMenuLevel, onChange, showMoreButton = false, title }) {
     const [initLoading, setInitLoading] = useState(true);
