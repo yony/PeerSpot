@@ -70,17 +70,17 @@ function App() {
         },
       }}
     >
-      <div className="ps-app">
-        <aside className="ps-side-bar">
-          <header className="ps-side-bar__header">
-            <Button type="text" shape="circle" icon={<IconMenu style={{ width: '16px', height: '16px' }} />}></Button>
-            <img src={logo} className="ps-logo" alt="logo" />
+      <div className='ps-app'>
+        <aside className='ps-side-bar'>
+          <header className='ps-side-bar__header'>
+            <Button type='text' shape='circle' icon={<IconMenu style={{ width: '16px', height: '16px' }} />}></Button>
+            <img src={logo} className='ps-logo' alt='logo' />
             <div style={{ width: '40px'}}></div>
           </header>
           <SideNavMenu />
         </aside>
-        <section className="ps-main">
-          <header className="ps-header">
+        <section className='ps-main'>
+          <header className='ps-header'>
             <Breadcrumb 
               items={[
                 {
@@ -113,7 +113,7 @@ function App() {
                   }}>YL</Avatar>
             </Badge>
           </header>
-          <div className="ps-body">
+          <div className='ps-body'>
             <aside className='ps-items-panel'>
               <div className='ps-items-panel__container'
                    style={styleTransition}>
@@ -139,12 +139,12 @@ function App() {
                     ))}
                   </div>
                   <div className='ps-items-panel__cta'>
-                    <Button type="primary" onClick={() => setMenuLevel(1)}>New Content Type</Button>
+                    <Button type='primary' onClick={() => setMenuLevel(1)}>New Content Type</Button>
                   </div>
                 </div>
                 <div className='ps-items-panel__level ps-items-panel__level--child'>
-                  <header className="ps-items-panel__header">
-                    <Button type="text" shape="circle" icon={<ArrowLeftOutlined style={{
+                  <header className='ps-items-panel__header'>
+                    <Button type='text' shape='circle' icon={<ArrowLeftOutlined style={{
         fontSize: '12px',
       }} />} onClick={() => setMenuLevel(0)}></Button>
                     <div>Steps</div>
@@ -154,12 +154,12 @@ function App() {
                     Steps 123456
                   </div>
                   <div className='ps-items-panel__cta'>
-                    <Button type="primary" onClick={() => setMenuLevel(2)}>New Step</Button>
+                    <Button type='primary' onClick={() => setMenuLevel(2)}>New Step</Button>
                   </div>
                 </div>
                 <div className='ps-items-panel__level ps-items-panel__level--child'>
-                  <header className="ps-items-panel__header">
-                    <Button type="text" shape="circle" icon={<ArrowLeftOutlined style={{
+                  <header className='ps-items-panel__header'>
+                    <Button type='text' shape='circle' icon={<ArrowLeftOutlined style={{
         fontSize: '12px',
       }} />} onClick={() => setMenuLevel(1)}></Button>
                     <div>Prompts</div>
@@ -169,7 +169,7 @@ function App() {
                     Prompts 123456
                   </div>
                   <div className='ps-items-panel__cta'>
-                    <Button type="primary">New Prompt</Button>
+                    <Button type='primary'>New Prompt</Button>
                   </div>
                 </div>
               </div>

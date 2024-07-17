@@ -100,12 +100,12 @@ function SingleItemPrompt() {
         <section className='ps-page-layout'>
             <Form 
                 className='ps-form-container'
-                layout="horizontal"
+                layout='horizontal'
                 labelCol={{span: 2,}}>
                 <header className='ps-page__header'>
                 <h1 className='ps-h1'>Ps Prompt For - Product Review Section Summary Alternate Solutions Step</h1>
-                <Dropdown menu={{ items }} placement="bottomRight">
-                    <Button type="text" shape="circle" icon={<IconDotMenu style={{ width: '16px', height: '16px' }} />}></Button>
+                <Dropdown menu={{ items }} placement='bottomRight'>
+                    <Button type='text' shape='circle' icon={<IconDotMenu style={{ width: '16px', height: '16px' }} />}></Button>
                 </Dropdown>
                 </header>
                 <div className='ps-page__body'>
@@ -140,18 +140,20 @@ function SingleItemPrompt() {
             
                     </div>
                     <aside className='ps-page__sidebar'>
-                        <header class="ps-page__sidebar__header">Variables Guide</header>
+                        <header className='ps-page__sidebar__header'>Variables Guide</header>
                         <Collapse
                             className='ps-variable-list'
                             accordion
+                            expandIconPosition='end'
                             items={usageContext}
                         />
+                        <header className='ps-page__sidebar__header'>Test the Prompt</header>
                     </aside>
                 </div>
                 <footer className='ps-page__footer'>
                 <Space>
                     <Button>Cancel</Button>
-                    <Button type="primary">Update</Button>
+                    <Button type='primary'>Update</Button>
                 </Space>
                 </footer>
             </Form>

@@ -39,6 +39,10 @@
     color: #000;
 }
 
+.ps-page__sidebar__header:not(:first-child) {
+    margin-top: 50px;
+}
+
 .ps-variable-list .ant-collapse-header-text {
     text-transform: capitalize;
 }
