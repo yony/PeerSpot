@@ -17,7 +17,7 @@
 
 .ps-page__body {
     flex: 1;
-    overflow-y: auto;
+    overflow-y: scroll;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -39,51 +39,12 @@
     color: #000;
 }
 
+.ps-variable-list .ant-collapse-header-text {
+    text-transform: capitalize;
+}
+
 .ps-variable-list .ant-collapse-content-box {
     padding: 0 !important;
-}
-
-.ps-context {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 15px 5px 20px;
-    overflow: hidden;
-}
-
-.ps-context__text {
-    flex: 1;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.ps-context__button {
-    flex: 0;
-    transform: translate3d(70px, 0, 0);
-    width: 0 !important;
-    height: 32px;
-    border: 0 none;
-    transition: transform .2s ease, flex .2s ease;
-    border-radius: 30px;
-}
-
-.ps-context__button:hover {
-    color: rgba(0,0,0, 0.8) !important;
-    background-color: rgba(0,50,100,0.05) !important;
-}
-
-.ps-context:active .ps-context__button,
-.ps-context:hover .ps-context__button {
-    flex: 32px 0 0;
-    transform: translate3d(0, 0, 0);
-    width: 32px !important;
-}
-
-.ps-context:not(:last-child) {
-    border-bottom: 1px solid #E5E6E1;
 }
 
 .ps-form {

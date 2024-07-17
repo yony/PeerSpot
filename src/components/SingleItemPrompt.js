@@ -1,9 +1,8 @@
 import './SingleItem.css';
-import React, { useState } from 'react';
+import React from 'react';
 import psVariables from './../data/ps_variables.json';
 import { Button, Collapse, Dropdown, Form, Input, Select, Space, Switch} from 'antd';
-import { CopyOutlined } from '@ant-design/icons';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import CopyToClipboardItem from './CopyToClipboardItem.js';
 import Icon from '@ant-design/icons';
 const { TextArea } = Input;
 
@@ -84,16 +83,7 @@ usageContextItems.map(context => {
         return item.usage_context === context;
     }).map(item => {
         return (
-            <div className='ps-context'>
-                <span className='ps-context__text'>{item.name}</span>
-                <CopyToClipboard
-                    classname='ps-context__copy'
-                    text={item.name}
-                    // onCopy={ copiedToClipboard }
-                >
-                    <Button className='ps-context__button' icon={<CopyOutlined />} />
-                </CopyToClipboard>
-            </div>
+            <CopyToClipboardItem text={ item.name } />
         );
     })
 
