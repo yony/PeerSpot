@@ -2,9 +2,10 @@ import './SingleItem.css';
 import React, { useState } from 'react';
 import psVariables from './../data/ps_variables.json';
 import { Button, Collapse, Dropdown, Form, Input, Select, Space, Switch} from 'antd';
+import { CopyOutlined } from '@ant-design/icons';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Icon from '@ant-design/icons';
 const { TextArea } = Input;
-
 
 const svgIconDotMenu = () => (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +83,18 @@ usageContextItems.map(context => {
     let children = psVariables.filter(item => {
         return item.usage_context === context;
     }).map(item => {
-        return (<div className='ps-context'> {item.name} </div>);
+        return (
+            <div className='ps-context'>
+                <span className='ps-context__text'>{item.name}</span>
+                <CopyToClipboard
+                    classname='ps-context__copy'
+                    text={item.name}
+                    // onCopy={ copiedToClipboard }
+                >
+                    <Button className='ps-context__button' icon={<CopyOutlined />} />
+                </CopyToClipboard>
+            </div>
+        );
     })
 
     usageContext.push({
