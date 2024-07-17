@@ -1,0 +1,31 @@
+
+.ps-page-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ps-page__header {
+    flex: 60px 0 0;
+    padding: 20px;
+    border-bottom: 1px solid #E5E6E1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FAFAFA;
+}
+
+.ps-form {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.ps-page__footer {
+    flex: 60px 0 0;
+    padding: 20px;
+    border-top: 1px solid #E5E6E1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: #FAFAFA;
+}
