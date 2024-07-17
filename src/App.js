@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import SearchResults from './components/SearchResults.js';
 import SideNavMenu from './components/SideNavMenu.js';
 import SingleItemPrompt from './components/SingleItemPrompt.js';
-import { Avatar, Badge, Breadcrumb, Button, ConfigProvider, Dropdown, Input, Space } from 'antd';
+import { Avatar, Badge, Breadcrumb, Button, ConfigProvider, Input } from 'antd';
 import Icon, { ArrowLeftOutlined, HomeOutlined } from '@ant-design/icons';
 
 // ICONS
@@ -61,6 +61,10 @@ function App() {
             borderRadius: '2px',
             colorPrimary: '#FFD700',
             colorPrimaryActive: '#E0BD00',
+            colorPrimaryHover: '#F7C602',
+          },
+          Switch: {
+            colorPrimary: '#FFD700',
             colorPrimaryHover: '#F7C602',
           },
         },
